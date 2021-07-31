@@ -1,5 +1,9 @@
 import org.junit.Test;
 
+import javax.xml.crypto.KeySelectorResult;
+
+import java.util.IdentityHashMap;
+
 import static org.junit.Assert.*;
 
 public class EncodingTest {
@@ -14,5 +18,11 @@ public class EncodingTest {
     public void checkIfSavesInputText() {
         Encoding testEncoding = new Encoding("MARTIN",2);
         assertEquals("MARTIN", testEncoding.getInputText());
+    }
+
+    @Test
+    public void checkKeyIsSaved() {
+        Encoding testEncoding = new Encoding("MARTIN",2);
+        assertEquals(2,testEncoding.getKey());
     }
 }

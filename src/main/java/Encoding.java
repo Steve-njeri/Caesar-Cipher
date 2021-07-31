@@ -8,4 +8,9 @@ public class Encoding {
     public String getInputText() {
         return dInputText;
     }
+
+    public int getKey() {
+        int dkey = 2;
+        return dkey;
+    }
 }
