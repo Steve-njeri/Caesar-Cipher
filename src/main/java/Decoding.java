@@ -6,4 +6,9 @@ public class Decoding {
         dKey = key;
         dInputText = inputText;
     }
+
+    public String getInputText() {
+        return dInputText;
+    }
+
 }
