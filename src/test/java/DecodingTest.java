@@ -20,4 +20,9 @@ public class DecodingTest {
     public void isValidInputText() {
         assertEquals(true, testDecoding.isValidInputText());
     }
+
+    @Test
+    public void isValidKey() {
+        assertEquals(false, testDecoding.isValidKey());
+    }
 }
