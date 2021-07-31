@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EncodingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-31T09:54:24" hostname="stephen-HP-ProBook-450-G7" time="0.002">
+<testsuite name="EncodingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-31T09:57:13" hostname="stephen-HP-ProBook-450-G7" time="0.002">
   <properties/>
   <testcase name="checkKeyIsSaved" classname="EncodingTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>

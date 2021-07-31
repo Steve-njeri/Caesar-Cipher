@@ -13,4 +13,14 @@ public class Encoding {
         int dkey = 2;
         return dkey;
     }
+
+    public boolean isValidInputText() {
+        char[] chars = dInputText.toCharArray();
+        for (char c : chars) {
+            if(!Character.isLetter(c) && c != ' ') {
+                return false;
+            }
+        }
+        return true;
+    }
 }
