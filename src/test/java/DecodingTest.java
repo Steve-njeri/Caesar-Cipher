@@ -15,4 +15,9 @@ public class DecodingTest {
     public void checkKeyIsSaved() {
         assertEquals(2,testDecoding.getKey());
     }
+
+    @Test
+    public void isValidInputText() {
+        assertEquals(true, testDecoding.isValidInputText());
+    }
 }
