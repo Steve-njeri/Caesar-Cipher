@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 public class EncodingTest {
     Encoding testEncoding = new Encoding("STEPHEN CIPHER", 2);
+
     @Test
     public void checkIfItCreatesInstance() {
         assertEquals(true, testEncoding instanceof Encoding);
