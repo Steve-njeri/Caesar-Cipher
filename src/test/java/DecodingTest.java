@@ -13,7 +13,7 @@ public class DecodingTest {
 
     @Test
     public void checkKeyIsSaved() {
-        assertEquals(2,testDecoding.getKey());
+        assertEquals(1,testDecoding.getKey());
     }
 
     @Test
@@ -24,5 +24,10 @@ public class DecodingTest {
     @Test
     public void isValidKey() {
         assertEquals(false, testDecoding.isValidKey());
+    }
+
+    @Test
+    public void validDecoding() {
+        assertEquals("STEPHEN NJERI", testDecoding.decode());
     }
 }

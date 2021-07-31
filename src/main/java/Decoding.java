@@ -1,6 +1,6 @@
 public class Decoding {
-    int dKey;
-    String dInputText;
+    private int dKey;
+    private String dInputText;
 
     public Decoding(int key, String inputText) {
         dKey = key;
@@ -28,4 +28,26 @@ public class Decoding {
     public boolean isValidKey() {
         return dKey >1 &&  dKey <26;
     }
+
+    public String decode() {
+        String decodedValue = "";
+        String[] encodedArray = dInputText.split("");
+        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        for (int i = 0; i < encodedArray.length; i++) {
+            if (dInputText.charAt(i) == ' ') {
+                decodedValue += " ";
+            } else {
+                int charPosition = alphabet.indexOf(dInputText.charAt(i));
+                int keyVal = (charPosition - dKey) % 26;
+
+                if (keyVal < 0) {
+                    keyVal = alphabet.length() + keyVal;
+                }
+                char replaceValue = alphabet.charAt(keyVal);
+                decodedValue += replaceValue;
+            }
+        }
+        return decodedValue;
+    }
+
 }
