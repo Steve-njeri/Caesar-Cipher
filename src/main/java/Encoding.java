@@ -23,4 +23,8 @@ public class Encoding {
         }
         return true;
     }
+
+    public boolean isValidKey() {
+        return dKey > 1 &&  dKey <26;
+    }
 }
