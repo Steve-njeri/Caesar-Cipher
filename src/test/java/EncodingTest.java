@@ -9,4 +9,10 @@ public class EncodingTest {
         Encoding testEncoding = new Encoding("MARTIN", 2);
         assertEquals(true, testEncoding instanceof Encoding);
     }
+
+    @Test
+    public void checkIfSavesInputText() {
+        Encoding testEncoding = new Encoding("MARTIN",2);
+        assertEquals("MARTIN", testEncoding.getInputText());
+    }
 }
