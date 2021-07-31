@@ -11,4 +11,7 @@ public class Decoding {
         return dInputText;
     }
 
+    public int getKey() {
+        return dKey;
+    }
 }
