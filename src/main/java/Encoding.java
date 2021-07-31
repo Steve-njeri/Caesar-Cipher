@@ -1,3 +1,5 @@
+import java.io.OptionalDataException;
+
 public class Encoding {
     private int dKey;
     private String dInputText;
@@ -10,7 +12,7 @@ public class Encoding {
     }
 
     public int getKey() {
-        int dkey = 2;
+        int dkey = 1;
         return dkey;
     }
 
@@ -26,5 +28,21 @@ public class Encoding {
 
     public boolean isValidKey() {
         return dKey > 1 &&  dKey <26;
+    }
+
+    public String encode() {
+        String encoded = "";
+        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String[] encodedArray = dInputText.split(" ");
+        for (int i = 0; i<encodedArray.length; i++) {
+            if (dInputText.charAt(i) == ' ') {
+                encoded += " ";
+            }else{
+                int charPosition = alphabet.indexOf(dInputText.charAt(i));
+                int key = (dKey + charPosition) % 26;
+                encoded += alphabet.charAt(key);
+            }
+        }
+        return encoded.toUpperCase();
     }
 }

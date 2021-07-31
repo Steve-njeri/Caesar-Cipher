@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class EncodingTest {
-    Encoding testEncoding = new Encoding("STEPHEN CIPHER", 2);
+    private Encoding testEncoding = new Encoding("STEPHEN NJERI", 1);
 
     @Test
     public void checkIfItCreatesInstance() {
@@ -12,7 +12,7 @@ public class EncodingTest {
 
     @Test
     public void checkIfSavesInputText() {
-        assertEquals("STEPHEN CIPHER", testEncoding.getInputText());
+        assertEquals("STEPHEN NJERI", testEncoding.getInputText());
     }
 
     @Test
@@ -28,5 +28,10 @@ public class EncodingTest {
     @Test
     public void isValidKey() {
         assertEquals(true, testEncoding.isValidKey());
+    }
+
+    @Test
+    public void validEncoding() {
+        assertEquals("TUFQIFO", testEncoding.encode());
     }
 }
