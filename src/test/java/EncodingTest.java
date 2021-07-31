@@ -32,6 +32,6 @@ public class EncodingTest {
 
     @Test
     public void validEncoding() {
-        assertEquals("TUFQIFO", testEncoding.encode());
+        assertEquals("TUFQIFO OKFSJ", testEncoding.encode());
     }
 }

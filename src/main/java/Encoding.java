@@ -32,8 +32,8 @@ public class Encoding {
 
     public String encode() {
         String encoded = "";
+        String[] encodedArray = dInputText.split("");
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        String[] encodedArray = dInputText.split(" ");
         for (int i = 0; i<encodedArray.length; i++) {
             if (dInputText.charAt(i) == ' ') {
                 encoded += " ";
