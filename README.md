@@ -36,7 +36,7 @@ The Caesar Cipher technique is one of the earliest and simplest method of encryp
 * highlight directive property does not work properly
 
 ## Support and contact details
-If you want to contact me, email me on stevenjeri33@gmail.com
+If you want to contact me, email me on stevenjeri254@gmail.com
 
 ### License
 *This project is protected under [MIT License](License)*
