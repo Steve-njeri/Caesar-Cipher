@@ -32,9 +32,6 @@ The Caesar Cipher technique is one of the earliest and simplest method of encryp
 * Java
 * SDK
 
-## Known Bugs
-* highlight directive property does not work properly
-
 ## Support and contact details
 If you want to contact me, email me on stevenjeri254@gmail.com
 
